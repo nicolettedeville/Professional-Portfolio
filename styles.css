@@ -158,16 +158,38 @@ main {
   height: auto;
   width: 100%;
 }
-.projects-square h3 {
+.projects-square h2 {
   text-align: center;
   width: 100%;
 }
 
 .project-spot {
+  align-items: center;
+  background-color: #262626;
   border: solid 2px black;
+  border-radius: 7%;
+  display: flex;
   height: 250px;
+  justify-content: center;
   margin: 15px;
+  transition: all 0.3s;
   width: 45%;
+}
+
+.project-spot h3 {
+  color: white;
+}
+
+.project-spot:hover {
+  box-shadow: 3px 5px 10px black;
+}
+
+.hover-display {
+  display: none;
+}
+
+.contact-square {
+  width: 100%;
 }
 
 @media (max-width: 768px) {
