@@ -74,8 +74,16 @@ main {
   flex-direction: column;
   gap: 10px;
   justify-content: space-between;
-  margin: 0 50px;
+  margin: 100px 100px 0;
   text-align: center;
+}
+
+.intro h1 {
+  margin-bottom: 50px;
+}
+
+.intro p {
+  margin: 0 10%;
 }
 
 .image-container {
