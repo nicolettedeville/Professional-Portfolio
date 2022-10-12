@@ -150,6 +150,26 @@ main {
   text-align: center;
 }
 
+.projects-square {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+}
+.projects-square h3 {
+  text-align: center;
+  width: 100%;
+}
+
+.project-spot {
+  border: solid 2px black;
+  height: 250px;
+  margin: 15px;
+  width: 45%;
+}
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
