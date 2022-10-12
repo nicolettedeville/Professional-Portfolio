@@ -15,3 +15,8 @@ document.querySelectorAll('.nav-link').forEach((n) =>
 );
 
 //projects hover swap
+const projectSpot = document.querySelectorAll('.project-spot');
+
+projectSpot.forEach((element) => {
+  element.addEventListener('mouseover', () => {});
+});
