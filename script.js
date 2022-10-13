@@ -13,10 +13,3 @@ document.querySelectorAll('.nav-link').forEach((n) =>
     navMenu.classList.remove('active');
   })
 );
-
-//projects hover swap
-const projectSpot = document.querySelectorAll('.project-spot');
-
-projectSpot.forEach((element) => {
-  element.addEventListener('mouseover', () => {});
-});
