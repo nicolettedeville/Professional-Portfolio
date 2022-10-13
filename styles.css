@@ -114,26 +114,27 @@ main {
 }
 
 .column-square {
-  border-radius: 15%;
+  align-items: center;
+  background-color: black;
+  border-radius: 5%;
   display: flex;
   flex-direction: row;
-  height: auto;
   justify-content: center;
   position: relative;
-  top: -50px;
-  width: 90%;
+  top: -125px;
+  width: 100%;
 }
 
 .column {
   align-items: center;
   background-color: white;
-  border: solid 1px black;
-  border-radius: 15%;
+  border: solid 0.5px darkgrey;
   display: flex;
   flex-direction: column;
-  margin: 0 0.1px;
+  height: 500px;
+  margin: 0 0.2px;
   padding: 15px;
-  width: 100%;
+  width: 31%;
 }
 
 .column img {
@@ -182,6 +183,14 @@ main {
 .project-spot:hover {
   box-shadow: 5px 5px 10px purple;
   transform: scale(1.01);
+}
+
+.project-spot:hover h3 {
+  display: none;
+}
+
+.project-spot:hover .hover-display {
+  display: flex;
 }
 
 .hover-display {
