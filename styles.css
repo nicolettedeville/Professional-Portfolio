@@ -101,7 +101,7 @@ main {
   border-top-right-radius: 5%;
   display: flex;
   flex-direction: column;
-  height: 500px;
+  height: 300px;
   justify-content: flex-start;
   padding: 50px 30px;
   width: 100%;
@@ -119,19 +119,20 @@ main {
   border-radius: 5%;
   display: flex;
   flex-direction: row;
+  height: 500px;
   justify-content: center;
   position: relative;
-  top: -125px;
+  top: -50px;
   width: 100%;
 }
 
 .column {
   align-items: center;
   background-color: white;
-  border: solid 0.5px darkgrey;
+  border: solid 0px darkgrey;
   display: flex;
   flex-direction: column;
-  height: 500px;
+  height: 90%;
   margin: 0 0.2px;
   padding: 15px;
   width: 31%;
@@ -156,6 +157,7 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 50px;
   height: auto;
   width: 100%;
 }
@@ -206,6 +208,10 @@ main {
 }
 
 .contact-square {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
   width: 100%;
 }
 
