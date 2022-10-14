@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 /*Mobile First Styles*/
 header {
@@ -41,7 +42,8 @@ a {
 
 .nav-branding {
   color: darkmagenta;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+  font-weight: 500;
   margin-left: 20px;
 }
 
@@ -271,7 +273,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 200px;
+  height: 250px;
   width: 100%;
 }
 
