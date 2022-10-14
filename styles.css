@@ -274,11 +274,16 @@ main {
     display: none;
   }
 
+  .navbar {
+    align-items: center;
+    justify-content: center;
+  }
+
   .nav-menu {
     align-items: center;
     background-color: rgba(0, 0, 0, 0);
+    display: flex;
     flex-direction: row;
-    height: 100%;
     justify-content: space-around;
     margin: 0;
     padding: 0;
@@ -288,15 +293,18 @@ main {
 
   .nav-link {
     color: black;
-    height: 100%;
+    font-size: 1.5em;
     width: auto;
   }
 
   .nav-item {
     align-items: center;
+    border-radius: 100%;
     display: flex;
-    height: 100%;
+    height: 50px;
     justify-content: center;
+    margin: 10px;
+    width: 100%;
   }
 
   .nav-item:hover {
