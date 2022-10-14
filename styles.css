@@ -22,22 +22,31 @@ a {
   display: flex;
   justify-content: space-between;
   min-height: 70px;
-  padding: 0 24px;
 }
 
 .nav-menu {
   align-items: center;
-  display: flex;
-  gap: 60px;
+  background-color: #262626;
+  display: Flex;
+  flex-direction: column;
+  gap: 0;
   justify-content: space-between;
+  right: -100%;
+  position: fixed;
+  text-align: center;
+  top: 70px;
+  transition: 0.2s;
+  width: 100%;
 }
 
 .nav-branding {
   color: darkmagenta;
   font-size: 1.75rem;
+  margin-left: 20px;
 }
 
 .nav-link {
+  color: white;
   transition: 0.7s ease;
 }
 
@@ -45,9 +54,28 @@ a {
   color: darkmagenta;
 }
 
+.nav-item {
+  margin: 16px 0;
+}
+
+.nav-menu.active {
+  right: 0;
+}
+
 .hamburger {
-  cursor: pointer;
-  display: none;
+  display: block;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .bar {
@@ -74,16 +102,16 @@ main {
   flex-direction: column;
   gap: 10px;
   justify-content: space-between;
-  margin: 100px 100px 0;
+  margin: 50px 50px 0;
   text-align: center;
 }
 
 .intro h1 {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .intro p {
-  margin: 0 5%;
+  margin: 0;
 }
 
 .image-container {
@@ -241,44 +269,41 @@ main {
   margin: 10px 120px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .hamburger {
-    display: block;
-  }
-
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    display: none;
   }
 
   .nav-menu {
-    background-color: #262626;
-    flex-direction: column;
-    gap: 0;
-    right: -100%;
-    position: fixed;
-    text-align: center;
-    top: 70px;
-    transition: 0.2s;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    position: static;
     width: 100%;
   }
 
   .nav-link {
-    color: white;
+    color: black;
+    height: 100%;
+    width: auto;
   }
 
   .nav-item {
-    margin: 16px 0;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
   }
 
-  .nav-menu.active {
-    right: 0;
+  .nav-item:hover {
+    background-color: black;
+  }
+
+  .nav-item:hover .nav-link {
+    color: white;
   }
 }
