@@ -1,4 +1,4 @@
-//hamburger menu on tablet and mobile
+//hamburger menu on mobile
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -13,3 +13,19 @@ document.querySelectorAll('.nav-link').forEach((n) =>
     navMenu.classList.remove('active');
   })
 );
+
+//sticky navbar effect
+const navbar = document.getElementById('navigation');
+const offset = navbar.offsetTop;
+
+window.onscroll = function () {
+  stickyNav();
+};
+
+function stickyNav() {
+  if (window.pageYOffset >= offset) {
+    navbar.classList.add('sticky');
+  } else {
+    navbar.classList.remove('sticky');
+  }
+}
