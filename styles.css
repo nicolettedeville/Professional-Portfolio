@@ -120,7 +120,6 @@ body {
   flex-direction: column;
   gap: 10px;
   justify-content: space-between;
-  padding-top: 50px;
   text-align: center;
   width: 100%;
 }
@@ -306,9 +305,9 @@ body {
   background-image: linear-gradient(
     90deg,
     rgba(100, 0, 150, 0.85) 0%,
-    rgba(130, 130, 130, 0.55) 20%,
+    rgba(130, 130, 130, 0.55) 10%,
     rgba(80, 80, 80, 0.65) 35% 65%,
-    rgba(130, 130, 130, 0.55) 80%,
+    rgba(130, 130, 130, 0.55) 90%,
     rgba(100, 0, 150, 0.85) 100%
   );
   border-top: solid 1px black;
@@ -323,6 +322,7 @@ body {
 
 .contact-section-title,
 .contact-pickup {
+  color: white;
   margin: 10px 20px;
   text-align: center;
 }
@@ -331,7 +331,7 @@ body {
   margin: 10px 120px;
 }
 
-.contact-square .contact-button {
+.contact-button {
   background-color: rgba(100, 0, 150, 0.75);
   border: solid 1px black;
   border-radius: 5px;
@@ -348,7 +348,7 @@ body {
   transform: translateY(-3px);
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 770px) and (max-width: 1200px) {
   .hamburger {
     display: none;
   }
@@ -393,10 +393,6 @@ body {
     color: white;
   }
 
-  .intro {
-    padding-top: 60px;
-  }
-
   .intro-title {
     font-size: 1.5rem;
     width: 82.5%;
@@ -419,7 +415,7 @@ body {
 
 @media (min-width: 1200px) {
   .navbar {
-    min-height: 100px;
+    min-height: 50px;
   }
 
   .nav-branding {
@@ -454,6 +450,7 @@ body {
     border-radius: 100%;
     display: flex;
     justify-content: center;
+    margin: 7.5px;
     padding: 15px;
     width: 30%;
   }
@@ -464,10 +461,6 @@ body {
 
   .nav-item:hover .nav-link {
     color: white;
-  }
-
-  .intro {
-    padding-top: 70px;
   }
 
   .intro-title {
