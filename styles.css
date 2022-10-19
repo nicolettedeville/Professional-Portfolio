@@ -54,7 +54,10 @@ body {
   position: fixed;
   text-align: center;
   top: 70px;
-  transition: 0.2s;
+  transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
   width: 100%;
 }
 
@@ -63,6 +66,9 @@ body {
   margin: 16px 0;
   text-decoration: none;
   transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
 }
 
 .nav-link {
@@ -85,6 +91,10 @@ body {
 
 .hamburger.active .bar:nth-child(1) {
   transform: translateY(6px) rotate(45deg);
+  -moz-transform: translateY(6px) rotate(45deg);
+  -ms-transform: translateY(6px) rotate(45deg);
+  -o-transform: translateY(6px) rotate(45deg);
+  -webkit-transform: translateY(6px) rotate(45deg);
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -93,6 +103,10 @@ body {
 
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-12px) rotate(-45deg);
+  -moz-transform: translateY(-12px) rotate(-45deg);
+  -ms-transform: translateY(-12px) rotate(-45deg);
+  -o-transform: translateY(-12px) rotate(-45deg);
+  -webkit-transform: translateY(-12px) rotate(-45deg);
 }
 
 .bar {
@@ -101,8 +115,10 @@ body {
   display: block;
   height: 4px;
   margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
   width: 35px;
 }
 
@@ -170,6 +186,10 @@ body {
   text-align: center;
 }
 
+.skills-description {
+  margin-bottom: 15%;
+}
+
 .column-square {
   align-items: center;
   display: flex;
@@ -188,7 +208,7 @@ body {
   height: 500px;
   padding: 15px;
   position: relative;
-  top: -100px;
+  top: -90px;
   width: 33%;
 }
 
@@ -247,6 +267,9 @@ body {
   justify-content: center;
   margin: 15px;
   transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
   width: 100%;
 }
 
@@ -257,6 +280,10 @@ body {
 .project-spot:hover {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.85);
   transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  -o-transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
 }
 
 .project-spot:hover .project-title {
@@ -268,6 +295,9 @@ body {
   display: none;
   flex-direction: column;
   transition: all 2.8s;
+  -moz-transition: all 2.8s;
+  -o-transition: all 2.8s;
+  -webkit-transition: all 2.8s;
   width: 100%;
 }
 
@@ -292,12 +322,19 @@ body {
   height: 50px;
   margin-top: 20px;
   transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
   width: 150px;
 }
 
 .hover-display .website-button:hover {
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 1);
   transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
+  -webkit-transform: translateY(-3px);
 }
 
 .contact-square {
@@ -340,12 +377,19 @@ body {
   height: 50px;
   margin-top: 20px;
   transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
   width: 150px;
 }
 
 .contact-square .contact-button:hover {
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
   transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
+  -webkit-transform: translateY(-3px);
 }
 
 @media (min-width: 770px) and (max-width: 1200px) {
