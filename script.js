@@ -17,6 +17,7 @@ document.querySelectorAll('.nav-link').forEach((n) =>
 //sticky navbar effect
 const navbar = document.getElementById('navigation');
 const offset = navbar.offsetTop;
+const mainContainer = document.querySelector('.main-conatiner');
 
 window.onscroll = function () {
   stickyNav();
@@ -25,6 +26,7 @@ window.onscroll = function () {
 function stickyNav() {
   if (window.pageYOffset >= offset) {
     navbar.classList.add('sticky');
+    mainContainer.style.paddingTop = '60px';
   } else {
     navbar.classList.remove('sticky');
   }

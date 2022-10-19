@@ -111,7 +111,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 60px;
   width: 100%;
 }
 
@@ -381,7 +380,7 @@ body {
     border-radius: 100%;
     display: flex;
     justify-content: center;
-    padding: 20px 20px;
+    padding: 10px 10px;
     width: 35%;
   }
 
@@ -393,13 +392,17 @@ body {
     color: white;
   }
 
-  .main-container {
-    padding-top: 100px;
+  .intro {
+    padding-top: 60px;
   }
 
   .intro-title {
     font-size: 1.5rem;
     width: 82.5%;
+  }
+
+  .half-square {
+    padding-top: 70px;
   }
 
   .project-spot {
