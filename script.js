@@ -26,7 +26,6 @@ window.onscroll = function () {
 function stickyNav() {
   if (window.pageYOffset >= offset) {
     navbar.classList.add('sticky');
-    mainContainer.style.paddingTop = '60px';
   } else {
     navbar.classList.remove('sticky');
   }
