@@ -71,18 +71,18 @@ body {
   align-items: center;
   background-color: rgba(40, 40, 40, 1);
   display: Flex;
-  flex-direction: column;
   -ms-flex-direction: column;
+  flex-direction: column;
   gap: 0;
   justify-content: space-between;
   right: -100%;
   position: fixed;
   text-align: center;
   top: 70px;
-  transition: all 0.2s;
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
   -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   width: 100%;
 }
 
@@ -90,10 +90,10 @@ body {
   list-style-type: none;
   margin: 16px 0;
   text-decoration: none;
-  transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .nav-link {
@@ -116,11 +116,11 @@ body {
 }
 
 .hamburger.active .bar:nth-child(1) {
-  transform: translateY(6px) rotate(45deg);
   -moz-transform: translateY(6px) rotate(45deg);
   -ms-transform: translateY(6px) rotate(45deg);
   -o-transform: translateY(6px) rotate(45deg);
   -webkit-transform: translateY(6px) rotate(45deg);
+  transform: translateY(6px) rotate(45deg);
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -128,11 +128,11 @@ body {
 }
 
 .hamburger.active .bar:nth-child(3) {
-  transform: translateY(-12px) rotate(-45deg);
   -moz-transform: translateY(-12px) rotate(-45deg);
   -ms-transform: translateY(-12px) rotate(-45deg);
   -o-transform: translateY(-12px) rotate(-45deg);
   -webkit-transform: translateY(-12px) rotate(-45deg);
+  transform: translateY(-12px) rotate(-45deg);
 }
 
 .bar {
@@ -141,18 +141,18 @@ body {
   display: block;
   height: 4px;
   margin: 5px auto;
-  transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   width: 35px;
 }
 
 .main-container {
   align-items: center;
   display: flex;
-  flex-direction: column;
   -ms-flex-direction: column;
+  flex-direction: column;
   justify-content: center;
   width: 100%;
 }
@@ -200,8 +200,8 @@ body {
   border-top-right-radius: 25px;
   color: white;
   display: flex;
-  flex-direction: column;
   -ms-flex-direction: column;
+  flex-direction: column;
   height: auto;
   justify-content: flex-start;
   padding: 50px 30px;
@@ -221,8 +221,8 @@ body {
 .column-square {
   align-items: center;
   display: flex;
-  flex-direction: row;
   -ms-flex-direction: row;
+  flex-direction: row;
   height: 500px;
   justify-content: center;
   width: 90%;
@@ -232,10 +232,14 @@ body {
   align-items: center;
   background-color: rgba(255, 255, 255, 1);
   display: flex;
-  flex-direction: column;
   -ms-flex-direction: column;
+  flex-direction: column;
   height: 100%;
   padding: 15px;
+  -moz-transform: translateY(-20%);
+  -ms-transform: translateY(-20%);
+  -o-transform: translateY(-20%);
+  -webkit-transform: translateY(-20%);
   transform: translateY(-20%);
   width: 33%;
 }
@@ -286,10 +290,10 @@ body {
 
 .projects-square {
   display: flex;
-  flex-direction: row;
   -ms-flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: center;
   height: auto;
   margin-bottom: 10%;
@@ -309,10 +313,10 @@ body {
   height: 250px;
   justify-content: center;
   margin: 15px;
-  transition: all 0.2s;
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
   -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   width: 100%;
 }
 
@@ -322,11 +326,11 @@ body {
 
 .project-spot:hover {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.85);
-  transform: translateY(-4px);
   -moz-transform: translateY(-4px);
   -ms-transform: translateY(-4px);
   -o-transform: translateY(-4px);
   -webkit-transform: translateY(-4px);
+  transform: translateY(-4px);
 }
 
 .project-spot:hover .project-title {
@@ -336,12 +340,12 @@ body {
 .hover-display {
   color: rgba(255, 255, 255, 0);
   display: none;
-  flex-direction: column;
   -ms-flex-direction: column;
-  transition: all 2.8s;
+  flex-direction: column;
   -moz-transition: all 2.8s;
   -o-transition: all 2.8s;
   -webkit-transition: all 2.8s;
+  transition: all 2.8s;
   width: 100%;
 }
 
@@ -368,20 +372,20 @@ body {
   height: 50px;
   justify-content: center;
   margin-top: 20px;
-  transition: all 0.2s;
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
   -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   width: 150px;
 }
 
 .hover-display .website-button:hover {
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 1);
-  transform: translateY(-3px);
   -moz-transform: translateY(-3px);
   -ms-transform: translateY(-3px);
   -o-transform: translateY(-3px);
   -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
 }
 
 .contact-square {
@@ -422,8 +426,8 @@ body {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   display: flex;
-  flex-direction: column;
   -ms-flex-direction: column;
+  flex-direction: column;
   justify-content: center;
   height: 250px;
   width: 100%;
@@ -452,20 +456,20 @@ body {
   justify-content: center;
   margin-top: 20px;
   text-align: center;
-  transition: all 0.2s;
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
   -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   width: 150px;
 }
 
 .contact-square .contact-button:hover {
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
-  transform: translateY(-3px);
   -moz-transform: translateY(-3px);
   -ms-transform: translateY(-3px);
   -o-transform: translateY(-3px);
   -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
 }
 
 @media (min-width: 770px) and (max-width: 1200px) {
@@ -555,8 +559,8 @@ body {
     align-items: center;
     background-color: rgba(0, 0, 0, 0);
     display: flex;
-    flex-direction: row;
     -ms-flex-direction: row;
+    flex-direction: row;
     flex-grow: 2;
     justify-content: space-around;
     margin: 0;
@@ -603,7 +607,7 @@ body {
 
   .project-spot {
     padding: 50px;
-    width: 45%;
+    width: 30%;
   }
 
   .project-spot .hover-display .website-button {
