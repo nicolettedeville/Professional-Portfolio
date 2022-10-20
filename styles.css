@@ -202,7 +202,7 @@ body {
   display: flex;
   flex-direction: column;
   -ms-flex-direction: column;
-  height: 400px;
+  height: auto;
   justify-content: flex-start;
   padding: 50px 30px;
   width: 100%;
@@ -220,10 +220,13 @@ body {
 
 .column-square {
   align-items: center;
+  border: solid 1px solid;
   display: flex;
   flex-direction: row;
   -ms-flex-direction: row;
+  height: 500px;
   justify-content: center;
+  margin-bottom: 20px;
   padding: 20px;
   width: 100%;
 }
@@ -235,10 +238,10 @@ body {
   display: flex;
   flex-direction: column;
   -ms-flex-direction: column;
-  height: 500px;
+  height: 100%;
   padding: 15px;
   position: relative;
-  top: -90px;
+  top: -15%;
   width: 33%;
 }
 
@@ -510,6 +513,10 @@ body {
 
   .half-square {
     padding-top: 30px;
+  }
+
+  .column {
+    top: -20%;
   }
 
   .project-spot {
