@@ -528,7 +528,11 @@ body {
   }
 
   .column {
-    top: -20%;
+    -moz-transform: translateY(-15%);
+    -ms-transform: translateY(-15%);
+    -o-transform: translateY(-15%);
+    -webkit-transform: translateY(-15%);
+    transform: translateY(-15%);
   }
 
   .project-spot {
