@@ -31,3 +31,11 @@ function stickyNav() {
     navbar.classList.remove('sticky');
   }
 }
+
+//show the contact form
+const footer = document.querySelector('.site-footer');
+const contactButton = document.querySelector('.contact-button');
+
+contactButton.addEventListener('click', () => {
+  footer.classList.toggle('active');
+});
