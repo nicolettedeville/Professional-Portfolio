@@ -183,7 +183,7 @@ body {
 
 .image-container {
   height: 300px;
-  margin: 80px;
+  margin: 50px;
   width: 300px;
 }
 
@@ -204,7 +204,8 @@ body {
   flex-direction: column;
   height: auto;
   justify-content: flex-start;
-  padding: 50px 30px;
+  min-height: 350px;
+  padding: 0px 30px;
   width: 100%;
 }
 
@@ -214,10 +215,6 @@ body {
   text-align: center;
 }
 
-.skills-description {
-  margin-bottom: 15%;
-}
-
 .column-square {
   align-items: center;
   display: flex;
@@ -225,6 +222,7 @@ body {
   flex-direction: row;
   height: 500px;
   justify-content: center;
+  min-height: 400px;
   width: 90%;
 }
 
@@ -236,11 +234,11 @@ body {
   flex-direction: column;
   height: 100%;
   padding: 15px;
-  -moz-transform: translateY(-20%);
-  -ms-transform: translateY(-20%);
-  -o-transform: translateY(-20%);
-  -webkit-transform: translateY(-20%);
-  transform: translateY(-20%);
+  -moz-transform: translateY(-10%);
+  -ms-transform: translateY(-10%);
+  -o-transform: translateY(-10%);
+  -webkit-transform: translateY(-10%);
+  transform: translateY(-10%);
   width: 33%;
 }
 
@@ -301,6 +299,7 @@ body {
 }
 
 .project-section-title {
+  margin-bottom: 30px;
   text-align: center;
   width: 100%;
 }
@@ -372,6 +371,7 @@ body {
   height: 50px;
   justify-content: center;
   margin-top: 20px;
+  text-decoration: none;
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
   -webkit-transition: all 0.2s;
@@ -391,13 +391,7 @@ body {
 /*Footer Styles*/
 
 .site-footer {
-  height: 220px;
-  overflow: hidden;
-  transition: all 0.3s ease-out;
-}
-
-.site-footer.active {
-  height: 400px;
+  height: auto;
 }
 
 .contact-square {
@@ -440,7 +434,8 @@ body {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  justify-content: center;
+  height: 22vh;
+  justify-content: flex-start;
   margin-top: 0%;
   overflow: hidden;
   padding: 20px;
@@ -449,6 +444,10 @@ body {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   width: 100%;
+}
+
+.contact-square.active {
+  height: 50vh;
 }
 
 .contact-section-title,
@@ -507,7 +506,7 @@ body {
   width: 80vw;
 }
 
-@media (min-width: 770px) and (max-width: 1200px) {
+@media (min-width: 830px) and (max-width: 1200px) {
   .hamburger {
     display: none;
   }
@@ -558,16 +557,16 @@ body {
     width: 82.5%;
   }
 
-  .half-square {
-    padding-top: 30px;
+  .skills-description {
+    margin-bottom: 0;
   }
 
   .column {
-    -moz-transform: translateY(-15%);
-    -ms-transform: translateY(-15%);
-    -o-transform: translateY(-15%);
-    -webkit-transform: translateY(-15%);
-    transform: translateY(-15%);
+    -moz-transform: translateY(-8%);
+    -ms-transform: translateY(-8%);
+    -o-transform: translateY(-8%);
+    -webkit-transform: translateY(-8%);
+    transform: translateY(-8%);
   }
 
   .project-spot {
@@ -642,6 +641,18 @@ body {
 
   .skills-description {
     width: 80%;
+  }
+
+  .column {
+    -moz-transform: translateY(-18%);
+    -ms-transform: translateY(-18%);
+    -o-transform: translateY(-18%);
+    -webkit-transform: translateY(-18%);
+    transform: translateY(-18%);
+  }
+
+  .project-section-title {
+    margin-bottom: 5%;
   }
 
   .project-spot {

@@ -33,13 +33,9 @@ function stickyNav() {
 }
 
 //show the contact form
-const footer = document.querySelector('.site-footer');
+const contactForm = document.querySelector('.contact-square');
 const contactButton = document.querySelector('.contact-button');
-let destination = document.querySelector('.form-submit');
 
 contactButton.addEventListener('click', () => {
-  footer.classList.toggle('active');
-  destination.scrollIntoView({
-    behavior: 'smooth',
-  });
+  contactForm.classList.toggle('active');
 });
