@@ -220,7 +220,7 @@ body {
   display: flex;
   -ms-flex-direction: row;
   flex-direction: row;
-  height: 500px;
+  height: 600px;
   justify-content: center;
   min-height: 400px;
   width: 90%;
