@@ -215,8 +215,12 @@ body {
 
 .skills-intro,
 .skills-description {
-  margin: 20px 10%;
+  margin: 15px 10%;
   text-align: center;
+}
+
+.skills-description {
+  margin: 10px 10% 40px;
 }
 
 .column-square {
@@ -243,7 +247,7 @@ body {
   -o-transform: translateY(-10%);
   -webkit-transform: translateY(-10%);
   transform: translateY(-10%);
-  width: 33%;
+  width: 35%;
 }
 
 .sk1 {
@@ -326,6 +330,7 @@ body {
 
 .project-title {
   color: rgba(255, 255, 255, 1);
+  text-align: center;
 }
 
 .project-spot:hover {
@@ -397,7 +402,7 @@ body {
 
 footer {
   bottom: 0;
-  height: 650px;
+  height: 80vh;
   overflow: hidden;
   position: relative;
 }
@@ -442,12 +447,12 @@ footer {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 75vh;
+  height: 80vh;
   justify-content: flex-start;
   overflow: hidden;
   padding: 20px 20px;
   position: relative;
-  top: 68%;
+  top: 72%;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
@@ -511,7 +516,7 @@ footer {
   color: rgba(255, 255, 255, 1);
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin: 30px 0 30px;
   padding: 10px;
   text-align: center;
   text-decoration: none;
@@ -539,9 +544,14 @@ footer {
   width: 100%;
 }
 
+.contact-info-title {
+  margin: 10px 5%;
+  text-align: center;
+}
+
 .qr-code-grid {
   display: grid;
-  gap: 10px;
+  gap: 15px 40px;
   grid-template-columns: auto auto;
 }
 
