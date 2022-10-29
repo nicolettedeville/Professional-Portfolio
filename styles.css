@@ -1,3 +1,10 @@
+/*
+Fonts used are:
+Comic Sans
+Verdana
+Times New roman
+*/
+
 /*Normalizing*/
 * {
   box-sizing: border-box;
@@ -61,6 +68,7 @@ body {
 }
 
 .bname {
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
   text-decoration: none;
 }
 
@@ -102,6 +110,7 @@ body {
 
 .nav-link {
   color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .nav-link:hover {
@@ -165,6 +174,7 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
+  font-family: 'Comic Sans MS', 'Comic Sans', Cursive;
   gap: 10px;
   justify-content: space-between;
   text-align: center;
@@ -180,6 +190,7 @@ body {
 }
 
 .intro-statement {
+  font-family: 'Times New Roman', Times, serif;
   margin: 0;
   text-align: center;
   width: 80%;
@@ -215,12 +226,17 @@ body {
 
 .skills-intro,
 .skills-description {
-  margin: 15px 10%;
+  margin: 15px 5%;
   text-align: center;
 }
 
+.skills-intro {
+  font-family: 'Comic Sans MS', 'Comic Sans', Cursive;
+}
+
 .skills-description {
-  margin: 10px 10% 40px;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 10px 0 40px;
 }
 
 .column-square {
@@ -271,27 +287,39 @@ body {
 }
 
 .skill-title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
   margin: 15px 0;
   text-align: center;
 }
 
 .skill-desc {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1em;
   margin: 25px 0;
   text-align: center;
 }
 
 .skill-list {
-  align-items: flex-start;
+  align-items: center;
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
   justify-content: center;
-  width: 80%;
+  width: 50%;
 }
 
 .skill-list-title {
+  align-self: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
   padding-bottom: 20%;
+  text-align: center;
+}
+
+.skill-list-item {
+  font-family: 'Times New Roman', Times, serif;
+  list-style-type: none;
   text-align: center;
 }
 
@@ -308,6 +336,7 @@ body {
 }
 
 .project-section-title {
+  font-family: 'Comic Sans MS', 'Comic Sans', Cursive;
   margin-bottom: 30px;
   text-align: center;
   width: 100%;
@@ -330,6 +359,7 @@ body {
 
 .project-title {
   color: rgba(255, 255, 255, 1);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
 }
 
@@ -366,6 +396,8 @@ body {
 
 .project-description {
   color: rgba(255, 255, 255, 1);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.15em;
   margin: 15px;
   text-align: center;
 }
@@ -379,6 +411,7 @@ body {
   color: rgba(255, 255, 255, 1);
   display: flex;
   height: 50px;
+  font-family: 'Times New Roman', Times, serif;
   justify-content: center;
   margin-top: 20px;
   text-decoration: none;
@@ -400,7 +433,7 @@ body {
 
 /*Footer Styles*/
 
-footer {
+.contact-footer {
   bottom: 0;
   height: 80vh;
   overflow: hidden;
@@ -458,6 +491,7 @@ footer {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   width: 100%;
+  z-index: 99;
 }
 
 .contact-square.active {
@@ -494,6 +528,7 @@ footer {
     rgba(100, 0, 150, 1) 100%
   );
   top: 0;
+  z-index: 3;
 }
 
 .contact-section-title,
@@ -503,7 +538,12 @@ footer {
   text-align: center;
 }
 
+.contact-section-title {
+  font-family: 'Comic Sans Ms', 'Comic Sans', Cursive;
+}
+
 .contact-pickup {
+  font-family: 'Times New Roman', Times, serif;
   margin: 10px 50px;
 }
 
@@ -515,6 +555,7 @@ footer {
   box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.75);
   color: rgba(255, 255, 255, 1);
   display: flex;
+  font-family: 'Times New Roman', Times, serif;
   justify-content: center;
   margin: 30px 0 30px;
   padding: 10px;
@@ -544,11 +585,6 @@ footer {
   width: 100%;
 }
 
-.contact-info-title {
-  margin: 10px 5%;
-  text-align: center;
-}
-
 .qr-code-grid {
   display: grid;
   gap: 15px 40px;
@@ -563,6 +599,9 @@ footer {
 }
 
 .qr-code-desc {
+  color: rgba(255, 255, 255, 1);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.15em;
   margin-top: 10px;
   text-align: center;
 }
@@ -580,6 +619,7 @@ footer {
   box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.75);
   color: rgba(255, 255, 255, 1);
   display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 0.85em;
   height: 50px;
   justify-content: center;
@@ -665,6 +705,10 @@ footer {
     transform: translateY(-8%);
   }
 
+  .projects-square {
+    margin-bottom: -200px;
+  }
+
   .project-spot {
     padding: 50px;
     width: 45%;
@@ -673,6 +717,21 @@ footer {
   .project-section-title {
     font-size: 1.5em;
     margin-bottom: 7%;
+  }
+
+  .contact-footer {
+    height: 50vh;
+  }
+
+  .contact-square {
+    height: 50vh;
+    top: 60%;
+  }
+
+  .qr-code-grid {
+    display: grid;
+    gap: 15px 40px;
+    grid-template-columns: auto auto auto auto;
   }
 }
 
@@ -705,7 +764,7 @@ footer {
 
   .nav-link {
     color: rgba(0, 0, 0, 1);
-    font-size: 1.25em;
+    font-size: 1.5em;
     width: auto;
   }
 
@@ -735,6 +794,11 @@ footer {
     width: 80%;
   }
 
+  .half-square {
+    height: 60vh;
+    padding-top: 7.5%;
+  }
+
   .skills-description {
     width: 80%;
   }
@@ -747,6 +811,20 @@ footer {
     transform: translateY(-18%);
   }
 
+  .skill-list {
+    align-items: center;
+    width: 50%;
+  }
+
+  .skill-list-item {
+    list-style-type: none;
+  }
+
+  .projects-square {
+    margin-bottom: 0;
+    position: relative;
+  }
+
   .project-section-title {
     margin-bottom: 5%;
   }
@@ -757,12 +835,43 @@ footer {
   }
 
   .project-spot .hover-display .website-button {
-    height: 30px;
-    width: 100px;
+    height: 40px;
+    width: 125px;
   }
 
   .hover-display {
     align-items: center;
     justify-content: center;
+  }
+
+  .contact-footer {
+    height: 60vh;
+  }
+
+  .contact-square {
+    height: 60vh;
+    top: 64%;
+  }
+
+  .contact-button {
+    font-size: 1.5em;
+    width: 40%;
+  }
+
+  .qr-code-grid {
+    align-items: center;
+    display: grid;
+    gap: 15px 150px;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+  }
+
+  .qr-code {
+    width: 150px;
+  }
+
+  .alternate-contact-button {
+    font-size: 1.15em;
+    width: 250px;
   }
 }
