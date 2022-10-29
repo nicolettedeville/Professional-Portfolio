@@ -712,7 +712,7 @@ body {
   }
 
   .projects-square {
-    margin-bottom: -200px;
+    top: 0;
   }
 
   .project-spot {
