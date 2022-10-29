@@ -331,8 +331,14 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   height: auto;
-  margin-bottom: -350px;
+  margin-bottom: 0;
+  position: relative;
+  top: 140px;
   width: 100%;
+}
+
+.projects-square.active {
+  top: 0;
 }
 
 .project-section-title {
@@ -435,7 +441,7 @@ body {
 
 .contact-footer {
   bottom: 0;
-  height: 80vh;
+  height: 70vh;
   overflow: hidden;
   position: relative;
 }
@@ -480,12 +486,12 @@ body {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 80vh;
+  height: 70vh;
   justify-content: flex-start;
   overflow: hidden;
   padding: 20px 20px;
   position: relative;
-  top: 72%;
+  top: 70%;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
@@ -804,6 +810,8 @@ body {
   }
 
   .column {
+    align-items: center;
+    justify-content: center;
     -moz-transform: translateY(-18%);
     -ms-transform: translateY(-18%);
     -o-transform: translateY(-18%);
@@ -816,7 +824,12 @@ body {
     width: 50%;
   }
 
+  .skill-list-title {
+    padding-bottom: 20px;
+  }
+
   .skill-list-item {
+    font-size: 1.2em;
     list-style-type: none;
   }
 

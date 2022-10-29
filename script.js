@@ -35,9 +35,9 @@ function stickyNav() {
 //show the contact form
 const contactForm = document.querySelector('.contact-square');
 const contactButton = document.querySelector('.contact-button');
-const contactFooter = document.querySelector('.contact-footer');
+const projectSquare = document.querySelector('.projects-square');
 
 contactButton.addEventListener('click', () => {
   contactForm.classList.toggle('active');
-  contactFooter.classList.toggle('active');
+  projectSquare.classList.toggle('active');
 });
