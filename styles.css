@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
 /*
 Fonts used are:
 Comic Sans
@@ -6,12 +13,7 @@ Times New roman
 */
 
 /*Normalizing*/
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-}
+
 /*Mobile First Styles*/
 body {
   background-image: -moz-linear-gradient(
@@ -334,6 +336,7 @@ body {
   margin-bottom: 0;
   position: relative;
   top: 140px;
+  transition: all 0.2s ease;
   width: 100%;
 }
 
@@ -441,7 +444,7 @@ body {
 
 .contact-footer {
   bottom: 0;
-  height: 70vh;
+  height: 60vh;
   overflow: hidden;
   position: relative;
 }
@@ -486,12 +489,12 @@ body {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 70vh;
+  height: 60vh;
   justify-content: flex-start;
   overflow: hidden;
   padding: 20px 20px;
   position: relative;
-  top: 70%;
+  top: 35vh;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
@@ -721,10 +724,6 @@ body {
     transform: translateY(-8%);
   }
 
-  .projects-square {
-    top: 0;
-  }
-
   .project-spot {
     padding: 50px;
     width: 45%;
@@ -736,12 +735,12 @@ body {
   }
 
   .contact-footer {
-    height: 50vh;
+    height: 60vh;
   }
 
   .contact-square {
-    height: 50vh;
-    top: 60%;
+    height: 60vh;
+    top: 35vh;
   }
 
   .qr-code-grid {
@@ -848,11 +847,6 @@ body {
     list-style-type: none;
   }
 
-  .projects-square {
-    margin-bottom: 0;
-    position: relative;
-  }
-
   .project-section-title {
     margin-bottom: 5%;
   }
@@ -878,7 +872,7 @@ body {
 
   .contact-square {
     height: 60vh;
-    top: 64%;
+    top: 35vh;
   }
 
   .contact-button {
