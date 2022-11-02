@@ -617,6 +617,10 @@ body {
   width: 80px;
 }
 
+.no-mobile {
+  display: none;
+}
+
 .alternate-contact-button {
   align-items: center;
   background-color: rgba(100, 0, 150, 0.75);
@@ -629,6 +633,7 @@ body {
   font-size: 0.85em;
   height: 50px;
   justify-content: center;
+  margin: 10px;
   padding: 5px;
   text-align: center;
   text-decoration: none;
@@ -648,7 +653,12 @@ body {
   transform: translateY(-3px);
 }
 
+/*Small tablet through small desktop styles*/
 @media (min-width: 830px) and (max-width: 1200px) {
+  .no-mobile {
+    display: block;
+  }
+
   .hamburger {
     display: none;
   }
@@ -741,7 +751,12 @@ body {
   }
 }
 
+/*Desktop specific Styles*/
 @media (min-width: 1200px) {
+  .no-mobile {
+    display: block;
+  }
+
   .navbar {
     min-height: 50px;
   }
