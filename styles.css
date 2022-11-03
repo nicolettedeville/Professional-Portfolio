@@ -847,6 +847,10 @@ body {
     list-style-type: none;
   }
 
+  .projects-square {
+    top: 20px;
+  }
+
   .project-section-title {
     margin-bottom: 5%;
   }
