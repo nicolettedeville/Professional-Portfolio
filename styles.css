@@ -563,6 +563,7 @@ body {
   border-radius: 5px;
   box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.75);
   color: rgba(255, 255, 255, 1);
+  cursor: pointer;
   display: flex;
   font-family: 'Times New Roman', Times, serif;
   justify-content: center;
