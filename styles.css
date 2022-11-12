@@ -1,3 +1,4 @@
+/*Normalizing*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,8 +12,6 @@ Comic Sans
 Verdana
 Times New roman
 */
-
-/*Normalizing*/
 
 /*Mobile First Styles*/
 body {
