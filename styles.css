@@ -15,37 +15,12 @@ Times New roman
 
 /*Mobile First Styles*/
 body {
-  background-image: -moz-linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.95) 0%,
-    rgba(130, 130, 130, 0.55) 10%,
-    rgba(80, 80, 80, 0.65) 35% 65%,
-    rgba(130, 130, 130, 0.55) 90%,
-    rgba(255, 255, 255, 0.95) 100%
-  );
-  background-image: -o-linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.95) 0%,
-    rgba(130, 130, 130, 0.55) 10%,
-    rgba(80, 80, 80, 0.65) 35% 65%,
-    rgba(130, 130, 130, 0.55) 90%,
-    rgba(255, 255, 255, 0.95) 100%
-  );
-  background-image: -webkit-linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.95) 0%,
-    rgba(130, 130, 130, 0.55) 10%,
-    rgba(80, 80, 80, 0.65) 35% 65%,
-    rgba(130, 130, 130, 0.55) 90%,
-    rgba(255, 255, 255, 0.95) 100%
-  );
   background-image: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.95) 0%,
-    rgba(160, 160, 160, 0.55) 10%,
-    rgba(80, 80, 80, 0.65) 35% 65%,
-    rgba(160, 160, 160, 0.55) 90%,
-    rgba(255, 255, 255, 0.95) 100%
+    rgba(120, 120, 120, 0.65) 0%,
+    rgba(80, 80, 80, 0.65) 15%,
+    rgba(80, 80, 80, 0.65) 85%,
+    rgba(120, 120, 120, 0.65) 100%
   );
 }
 
