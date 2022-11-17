@@ -223,7 +223,7 @@ body {
   display: flex;
   -ms-flex-direction: row;
   flex-direction: row;
-  height: 600px;
+  height: 700px;
   justify-content: center;
   min-height: 400px;
   width: 90%;
