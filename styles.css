@@ -8,7 +8,7 @@
 
 /*
 Fonts used are:
-Comic Sans
+Comic Sans(Cursive Fallback)
 Verdana
 Times New roman
 */
@@ -17,10 +17,12 @@ Times New roman
 body {
   background-image: linear-gradient(
     90deg,
-    rgba(120, 120, 120, 0.65) 0%,
+    rgba(205, 205, 205, 0.65) 0%,
+    rgba(120, 120, 120, 0.65) 10%,
     rgba(80, 80, 80, 0.65) 15%,
     rgba(80, 80, 80, 0.65) 85%,
-    rgba(120, 120, 120, 0.65) 100%
+    rgba(120, 120, 120, 0.65) 90%,
+    rgba(205, 205, 205, 0.65) 100%
   );
 }
 
@@ -212,6 +214,7 @@ body {
 
 .skills-description {
   font-family: 'Times New Roman', Times, serif;
+  font-size: 2vh;
   margin: 10px 0 40px;
 }
 
@@ -309,7 +312,6 @@ body {
   height: auto;
   margin-bottom: 0;
   position: relative;
-  top: 15px;
   transition: all 0.2s ease;
   width: 100%;
 }
@@ -333,6 +335,7 @@ body {
   height: 250px;
   justify-content: center;
   margin: 15px;
+  position: relative;
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
   -webkit-transition: all 0.2s;
@@ -343,6 +346,7 @@ body {
 .project-title {
   color: rgba(255, 255, 255, 1);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: realtive;
   text-align: center;
 }
 
@@ -683,11 +687,16 @@ body {
 
   .intro-title {
     font-size: 1.5rem;
-    width: 82.5%;
+    width: 75%;
   }
 
   .skills-description {
     margin-bottom: 0;
+    width: 75%;
+  }
+
+  .column-square {
+    width: 75%;
   }
 
   .column {
@@ -696,6 +705,10 @@ body {
     -o-transform: translateY(-8%);
     -webkit-transform: translateY(-8%);
     transform: translateY(-8%);
+  }
+
+  .projects-square {
+    width: 75%;
   }
 
   .project-spot {
@@ -730,8 +743,19 @@ body {
     display: block;
   }
 
+  .nav-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+  }
+
   .navbar {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     min-height: 50px;
+    width: 70%;
   }
 
   .nav-branding {
@@ -794,7 +818,12 @@ body {
   }
 
   .skills-description {
-    width: 80%;
+    font-size: 2vh;
+    width: 70%;
+  }
+
+  .column-square {
+    width: 70%;
   }
 
   .column {
@@ -822,7 +851,7 @@ body {
   }
 
   .projects-square {
-    top: 20px;
+    width: 70%;
   }
 
   .project-section-title {
